@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: savvana-spark-hub
+    runtime: node
+    repo: https://github.com/sayali23leapforge-glitch/savvana-spark-hub-
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    plan: free
